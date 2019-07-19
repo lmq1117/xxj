@@ -19,5 +19,5 @@ func main() {
 	v2i := 756
 	vs := strconv.Itoa(vi)
 	v2s := strconv.Itoa(v2i)
-	fmt.Println(vs + v2s)
+	fmt.Println(vs + v2s) //字串拼接
 }
