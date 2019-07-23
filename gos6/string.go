@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"reflect"
 )
 
 func main() {
@@ -29,8 +28,8 @@ func main() {
 	//9个字符
 	for i, ch := range str {
 		//fmt.Println(i,ch)
-		//fmt.Printf("%d----%d\n",i,ch)
-		fmt.Println(reflect.TypeOf(i))
-		fmt.Println(reflect.TypeOf(ch))
+		fmt.Printf("%d----%d\n", i, ch)
+		//fmt.Println(reflect.TypeOf(i))
+		//fmt.Println(reflect.TypeOf(ch))
 	}
 }
