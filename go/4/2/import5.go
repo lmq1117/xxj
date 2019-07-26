@@ -1,6 +1,7 @@
 package main
 
 //更短形式，但使用gofmt后会被强制换行
+//import ("fmt"; "os")
 import (
 	"fmt"
 	"os"
