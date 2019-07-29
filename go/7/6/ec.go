@@ -16,10 +16,15 @@ func main() {
 	//s对应的底层数组是整个文件的数组，s不释放，则指向数组不释放
 	s := FindDigits("aa.txt")
 	fmt.Printf("%c%c%c\n", s[0], s[1], s[2])
+	//fmt.Println(s)
 
 }
 
 func FindDigits(fileName string) []byte {
 	b, _ := ioutil.ReadFile(fileName)
-	return digitRegexp.Find(b)
+	//return digitRegexp.Find(b)
+	b = digitRegexp.Find(b)
+	c := make([]byte, len(b))
+	copy(c, b)
+	return c
 }
