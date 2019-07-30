@@ -43,6 +43,7 @@ func main() {
 	fmt.Println(d.Call())
 	fmt.Println(d.FF())
 	fmt.Println(d.GetName())
+	fmt.Println(d.Animal.name)
 
 	b := Animal{"京巴"}
 	bd := Dog{b}
