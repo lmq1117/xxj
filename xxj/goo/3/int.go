@@ -37,6 +37,8 @@ func main() {
 	}
 	a.Decr(2)
 	fmt.Println(a)
-	a.Incr(4)
+	a.Incr(4) //Go底层自动转换成了(&a).Incr(4)
+	fmt.Println(a)
+	(&a).Incr(5)
 	fmt.Println(a)
 }
