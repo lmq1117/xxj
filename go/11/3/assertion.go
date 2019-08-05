@@ -33,7 +33,12 @@ func main() {
 	sq1.side = 5
 	areaIntf = sq1
 	if t, ok := areaIntf.(*Square); ok {
-		fmt.Printf("the type of areaIntf is %T\n", t)
+		fmt.Printf("变量 areaIntf 的类型是 is %T\n", t)
+	}
+	if u, ok := areaIntf.(*Circle); ok {
+		fmt.Printf("变量 areaIntf 的类型是 is %T\n", u)
+	} else {
+		fmt.Printf("变量 areaIntf 的类型不是Circle\n")
 	}
 
 }
