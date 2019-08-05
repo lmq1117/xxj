@@ -11,7 +11,7 @@ type T struct {
 }
 
 func main() {
-	t := T{23, "skidoo"}
+	t := T{23, "skidooo"}
 	s := reflect.ValueOf(&t).Elem()
 
 	typeOfT := s.Type()
