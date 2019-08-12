@@ -8,10 +8,10 @@ import (
 func main() {
 	ch2 := make(chan int)
 	go pump(ch2)
-	fmt.Println(<-ch2)
-	fmt.Println(<-ch2)
+	//fmt.Println(<-ch2)
+	//fmt.Println(<-ch2)
 	go suck(ch2)
-	time.Sleep(1)
+	time.Sleep(1 * time.Second)
 
 }
 
@@ -22,6 +22,6 @@ func pump(ch chan int) {
 }
 func suck(ch chan int) {
 	for {
-		fmt.Println(<-ch)
+		fmt.Print(<-ch, " ")
 	}
 }
