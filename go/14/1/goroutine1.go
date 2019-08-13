@@ -7,10 +7,10 @@ import (
 
 func main() {
 	fmt.Println("main开始", time.Now())
-	//go longWait()
-	//go shortWait()
-	longWait()
-	shortWait()
+	go longWait()
+	go shortWait()
+	//longWait()
+	//shortWait()
 	fmt.Println("main sleep 开始", time.Now())
 	time.Sleep(10 * time.Second)
 	fmt.Println("main结束", time.Now())
